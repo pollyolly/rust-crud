@@ -1,14 +1,23 @@
 ### Notes URL
 ```
 http::/localhost:3000/user_list/{offset}/{limit}
+GET: /user_list/0/10
 http::/localhost:3000/user_by_id/{id}
+GET: /user_by_id/1
 http::/localhost:3000/user_create
+POST: user_create
 http::/localhost:3000/user_update
-http::/localhost:3000/user_delete/{id}
+PUT: /user_update
+http::/localhost:3000/user_delete/1
+GET: user_delete/1
 http::/localhost:3000/upload
+GET: file
 http::/localhost:3000/download/{filename}
+GET: donwload/filename.txt
 http::/localhost:3000/user_info
+GET: /user_info
 http::/localhost:3000/login
+GET: /login
 ```
 ### Cargo
 ```
@@ -35,7 +44,6 @@ axum-jwt-auth = "0.5.1"
 Generate RSA (public and key) for JWT
 ```
 $openssl genrsa -out private_key.pem 2048
-
 $openssl rsa -in private_key.pem -pubout -out public_key.pem
 ```
 ### Reference
