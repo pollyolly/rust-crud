@@ -5,9 +5,22 @@ GET: /user_list/0/10
 http::/localhost:3000/user_by_id/{id}
 GET: /user_by_id/1
 http::/localhost:3000/user_create
-POST: user_create
+POST:
+{
+    "name": "jake",
+    "occupation":"ceo",
+    "email":"jake@gmail.com",
+    "phone":"7878"
+}
 http::/localhost:3000/user_update
-PUT: /user_update
+PUT:
+{
+    "name": "jake demo",
+    "occupation":"ceo demo",
+    "email":"jake-demo@gmail.com",
+    "phone":"7878-demo",
+    "id":1
+} 
 http::/localhost:3000/user_delete/1
 GET: user_delete/1
 http::/localhost:3000/upload
