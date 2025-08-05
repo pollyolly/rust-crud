@@ -1,8 +1,8 @@
 ### Notes URL
 ```
-http::/localhost:3000/user_list/{offset}/{limit}
+http://localhost:3000/user_list/{offset}/{limit}
 GET: /user_list/0/10
-http::/localhost:3000/user_by_id/{id}
+http://localhost:3000/user_by_id/{id}
 GET: /user_by_id/1
 http::/localhost:3000/user_create
 POST:
@@ -12,7 +12,7 @@ POST:
     "email":"jake@gmail.com",
     "phone":"7878"
 }
-http::/localhost:3000/user_update
+http://localhost:3000/user_update
 PUT:
 {
     "name": "jake demo",
@@ -21,15 +21,15 @@ PUT:
     "phone":"7878-demo",
     "id":1
 } 
-http::/localhost:3000/user_delete/1
+http://localhost:3000/user_delete/1
 GET: user_delete/1
-http::/localhost:3000/upload
+http://localhost:3000/upload
 GET: file
-http::/localhost:3000/download/{filename}
+http://localhost:3000/download/{filename}
 GET: donwload/filename.txt
-http::/localhost:3000/user_info
+http://localhost:3000/user_info
 GET: /user_info
-http::/localhost:3000/login
+http://localhost:3000/login
 GET: /login
 ```
 ### Cargo
