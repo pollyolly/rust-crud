@@ -4,7 +4,7 @@ http://localhost:3000/user_list/{offset}/{limit}
 GET: /user_list/0/10
 http://localhost:3000/user_by_id/{id}
 GET: /user_by_id/1
-http::/localhost:3000/user_create
+http://localhost:3000/user_create
 POST:
 {
     "name": "jake",
